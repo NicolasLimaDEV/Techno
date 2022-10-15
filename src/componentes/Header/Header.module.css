@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    margin-top: 2rem;
+}
+
+.logo{
+    width: 118px;
+    margin-left: 10rem;
+}
+
+.menu{
+    display: flex;
+    margin-right: 10rem;
+    list-style: none;
+}
+
+.menu li{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 45px;
+    cursor: pointer;
+}
+
+.btnMobile{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.btnMobile div{
+    margin-bottom: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 940px){
+    .btnMobile{
+        margin-right: 5rem;
+        display: block;
+    }
+
+    .logo{
+        margin-left: 5rem;
+    }
+
+    .menu{
+        display: none;
+    }
+}

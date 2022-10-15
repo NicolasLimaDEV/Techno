@@ -1,0 +1,84 @@
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.col__news h1, .col__market h1, .col__contact h1{
+    margin-bottom: .5rem;
+}
+
+.col__news li, .col__market li, .col__contact li{
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+li:hover{
+    color: #8D86FF;
+}
+
+
+.col__newLetter input{
+    border: 3px solid #115AAF;
+    outline: none;
+    border-radius: 50px;
+    background-color: #2E2C8C;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.col__newLetter input::placeholder{
+    color: #5D5D91;
+    font-weight: bold;
+}
+
+.col__newLetter button{
+    position: absolute;
+    right: 170px;
+    bottom: -2202px;
+    border: none;
+    background: linear-gradient(99.19deg, rgba(24, 74, 121, 0.79) -15.9%, rgba(27, 214, 255, 0.63) 31.73%, #2C3095 70.99%);
+    color: #f1f1f1;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.copy{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.copy span{
+    color: #17C7FF;
+}
+
+@media screen and (max-width: 940px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col__news, .col__market, .col__contact, .col__newLetter{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .col__logo{
+        margin-bottom: 2rem;
+    }
+
+    .col__newLetter button{
+        position: relative;
+        bottom: 2.5px;
+        right: 85px;
+    }
+
+    .col__newLetter{
+        text-align: center;
+    }
+}

@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 5rem;
+}
+
+.contentA, .contentB{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.contentATitle, .contentBTitle{
+    width: 450px;
+    color: #fff;
+}
+
+.contentATitle h1, .contentBTitle h1{
+    font-size: 40px;
+}
+
+.contentATitle p, .contentBTitle p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.botao{
+    margin-top: 1rem;
+    padding: 12px 25px;
+    font-size: 22px;
+    border-radius: 50px;
+    background-color: #7972EA;
+    color: #fff;
+}
+
+@media screen and (max-width: 940px){
+    .contentA, .contentB{
+        flex-direction: column;
+    }
+
+    .contentATitle, .contentBTitle{
+        margin: 3rem 0;
+    }
+}

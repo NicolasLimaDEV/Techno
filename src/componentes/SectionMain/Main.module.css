@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+}
+
+.titleMain{
+    width: 650px;
+}
+
+.titleMain h1{
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.titleMain span{
+    color: #8D86FF;
+}
+
+.titleMain p {
+    margin: 2rem 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.buttons{
+    margin-right: 15px;
+}
+
+.buttonA, .buttonB{
+    padding: 15px 30px;
+    margin-right: 25px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonA{
+    background-color: #8D86FF;
+    color: #fff;
+}
+
+.buttonB{
+    background-color: transparent;
+    border: 1px solid #8D86FF;
+    color: #fff;
+}
+
+@media screen and (max-width: 940px){
+    .titleMain{
+        margin-top: 10rem;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .buttonA, .buttonB{
+        margin-bottom: 10px;
+    }
+}

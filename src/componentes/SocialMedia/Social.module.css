@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7972EA;
+    padding: 12px;
+    width: 891px;
+    height: 83px;
+    border-radius: 12px;
+}
+
+.content img{
+    height: 68px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 940px){
+    .content{
+        margin-top: 10rem;
+    }
+
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+}
